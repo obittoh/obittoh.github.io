@@ -98,6 +98,11 @@ h5 {
     color: #ffbf00;
 }
 
+.hr  {
+  font-weight: bold;
+  color: red:
+
+}
 
 /* preloader
 ==================================================*/
@@ -900,7 +905,18 @@ footer img {
     text-align: center;
 }
 
-.top-bar h1 {
+.top-bar-single {
+    color: #333;
+    padding: 150px 0 150px;
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/31.jpg);
+    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/31.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+
+.top-bar h1, .top-bar-single h1 {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 700;
@@ -908,19 +924,20 @@ footer img {
     line-height: 50px;
 }
 
-.top-bar p {
+.top-bar p, .top-bar-single p {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
     color: #777;
 }
 
-.top-bar p a {
+.top-bar p a, .top-bar-single p a  {
     color: #777;
 }
 
 .top-bar p a:hover,
-.top-bar p a:focus {
+.top-bar p a:focus, .top-bar-single p a:hover,
+.top-bar-single p a:focus  {
     color: #555;
     text-decoration: none;
 }
