@@ -7,6 +7,7 @@
 	<meta name="author" content="">
 
 	<title>Obitto</title>
+	<ink rel="icon" href="assets/images/logo.png">
 
 	<!-- CSS -->
 	<!-- Bootstrap core CSS -->
@@ -49,8 +50,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">O-</a>
-			</div>
+				<a class="navbar-brand" href="index.html">
+                     <img src="assets/images/logo.png" alt="LOGO">
+					</a>
+				</div>
 
 			<div class="collapse navbar-collapse" id="custom-collapse">
 				<ul class="nav navbar-nav navbar-right">
@@ -70,30 +73,15 @@
 
 </header>
 
-<div class = "container">
-<div class = "row">
-<div class = "col-md-12">
-	<p class = "goat">Leave title for brainstroming and new website designs
-	Leave title for brainstroming and new website designs</p>
-<p class = "goat">Leave title for brainstroming and new website designs</p>
 
-</div>
-</div>
-</div>
 
 <body>
-
-	<div class="container main-container">
-		<div class="col-md-12">
-				<img src="assets/images/logs.JPG" alt="" class="img-responsive" />
-				<div class="h-30"></div>
-				<hr>
-		</div>
 
 
 
 
 	<div class="popup-content">
+	<div class= "container-fluid">
 		<div class="row">
 
 			<div class="col-sm-12">
@@ -101,7 +89,7 @@
 				<div class="popup-header">
 					<h2 class="popup-title">Logs Analysis</h2>
 					<div class="popup-subtitle">
-						Udacity Full Stack Web Development
+						Project
 					</div>
 					<div class="popup-line"></div>
 				</div>
@@ -112,10 +100,25 @@
 
 		<div class="row">
 
-			<div class="col-sm-12">
-				<p>This project connects to a database in a virtual machine, and utilize complex SQL
-						 queries to analyze log data from a huge database, then print out answers to pressing
-							customer questions. </p>
+			<div class="col-sm-7">
+
+            <p>This project is running off a virtual machine based on Ubuntu 14 with postgresql pre-installed. All software required to run the project are listed below:
+             First, vagrant is a useful tool that allows running a virtual machine through windows command prompt. It is very lightweight, and can run for hours without any slowdown. I used vagrant 1.9.5 for windows OS.</p>
+
+             <p>Get oracle virtual box, which is needed for vagrant to work.
+             Go ahead and clone this repo using git or any terminal of your choice. Or you have the option of downloading the project as a zip file from Github. After installing, open git bash or git cmd or even powershell which I highly recommend. You can find this using the search option on windows OS. Navigate to your directory of choice where you want this project cloned using cd (directory name).</p>
+
+            <p> In your chosen directory, type "git clone", followed by the url of the project. For this project, type git clone https://github.com/obinna1/fullstack-nanodegree-vm.git.
+            Now that the files have been cloned onto your computer, you will use vagrant to install the virtual machine. To do this, open command prompt and navigate to the repo you just cloned. For example, if you cloned the repo into your documents directory, type cd documents/fullstack-nanodegree-vm.</p>
+
+            <p> When inside the folder type "vagrant up". This command will download the configured virtual machine unto your PC. Beware, you may have issues getting past this stage. I had to go into BIOS and enable Intel Virtualization for the VM to install properly. To get into BIOS, click f12 or f2 repeadedly as you start up your PC.
+            After vagrant has installed the VM, you will need to login using the command "vagrant ssh" To access shared directory, cd to /vagrant.</p>
+
+            <p>At this point, use ls (list) to confirm you have folders named newsdata, forum and tournaments. For the entirety of this project, you will use the newsdata folder.
+            Due to Github's max file size of 100mb, I intentionally left out the newsdata.sql, which you will have to download and place in the newsdata folder. Here is a link to the file --https://goo.gl/ OtdXKS After moving the downloaded files to the newsdata folder, navigate to that folder using in your VM and type "psql -d news -f newsdata.sql". This will load the data into the database. </p>
+
+
+             <p>This project connects to a database in a virtual machine, and utilize complex SQL queries to analyze log data from a huge database, then print out answers to pressing customer questions. </p>
 
 					<p>Now this project is asking for the results of three questions which are as follows:
 						<p> 1. What are the most popular three articles of all time?</p>
@@ -123,30 +126,34 @@
 					<p>3. On which days did more than 1% of requests lead to errors?</p>
 				<p>To obtain these answers, you will type "python newsdb.py" in the newsdata directory of your virtual machine </p>
 
+                 <p>View the project on my github repo using this link <a href="https://github.com/obittoh/fullstack-nanodegree-vm">here</a></p>
 
-								<p>View the project on my github repo using this link <a href="https://github.com/obittoh/fullstack-nanodegree-vm">here</a></p>
-			</div>
 
-		</div>
 
+           </p>
+           </div>
+           <div class="col-sm-5">
+           <img class= "img-responsive" src = "assets/images/logs2.jpg">
+
+
+		<div>
 	</div>
 </div>
+</div>
+</div>
+</div>
+</body>
 
 
 
 	<!-- Footer start -->
 
 	<footer id="footer">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
-			<div class="col-sm-6">
-					<div class="btn-list">
-					<a href="index.html#portfolio" class="btn btn-custom-12" target="_blank">Back to Portfolio</a>
-					<a href="logs.html" class="btn btn-custom-11 target="_blank">Previous Project</a>
-					<a href="movie.html" class="btn btn-custom-11 target="_blank">Next Project</a>
-				</div>
-				</div>
-                   <div class="col-sm-6">
+
+				<div class="col-sm-12">
+
 					<ul class="social-links">
 						<li><a href="https://twitter.com/obittoh" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="https://github.com/obittoh" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-github"></i></a></li>
@@ -155,13 +162,15 @@
 						<li><a href="#" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
 					</ul>
 
+					<h6 class="copyright">
+						"The only disability in life is a bad attitude."   Scott Hamilton
+					</h6>
+
 				</div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</footer>
-
-	<!-- Footer end -->
 
 	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -178,5 +187,4 @@
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/custom-shuffle-init.js"></script>
 
-	</body>
 	</html>
